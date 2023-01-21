@@ -1,0 +1,48 @@
+
+.cube{
+height:200px;
+width:200px;
+position:relative;
+margin:100px;
+transform-style:preserve-3d;
+perspective:5000px;
+transform:rotateX(-25deg) rotateY(-25deg);;
+transition: 2s ease-in-out;
+}
+.cube:hover{
+ transform:rotateX(180deg) rotateY(90deg);
+}
+.face{
+height:100%;
+width:100%;
+position:absolute;
+top:20%;
+left:20%;
+}
+.h1{
+text-align:center;
+}
+.one{
+background-color:blue;}
+.two{
+	background-color:orange;
+	transform:rotateY(90deg) translateX(-100px) translateZ(-100px) translateY(0px);
+}
+.three{
+	background-color:green;
+	transform:rotateY(90deg) translateX(-100px) translateZ(100px);
+}
+.four{
+	background-color:red;
+	transform:rotateY(360deg) translateX(0px) translateY(0px) translateZ(200px);
+}
+.five{
+	background-color:yellow;
+	transform:rotateX(90deg) translateX(0px) translateY(100px) translateZ(-100px);
+
+}
+.six{
+	background-color:pink;
+	transform:rotateX(90deg) translateX(0px) translateY(100px) translateZ(100px);
+}
+
